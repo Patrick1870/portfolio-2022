@@ -26,8 +26,6 @@ export default function ProjectView() {
     const tech = selectedProject.tech;
     const imagesArr = selectedProject.images;
 
-
-
     return (
         <>
             <Header />
