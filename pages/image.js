@@ -8,12 +8,11 @@ const transition = {
 };
 
 export default function Image(props) {
-  const [isOpen, setOpen] = useState(false);
+    const [isOpen, setOpen] = useState(false);
 
-  console.log(props);
-  console.log('so: props');
-
-  useDomEvent(useRef(window), "scroll", () => isOpen && setOpen(false));
+    if (typeof window !== "undefined") {
+        useDomEvent(useRef(window), "scroll", () => isOpen && setOpen(false));
+    }
 
   return (
     <div className={`image-container ${isOpen ? "open" : ""}`}>
