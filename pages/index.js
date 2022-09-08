@@ -37,7 +37,7 @@ export default function Home() {
           <div className='about-section flex flex-col mb-36'>
             <div className='flex gap-4 items-center mb-14'>
               <svg width="90" height="3" viewBox="0 0 90 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line x1="89.0781" y1="1.00781" x2="0.411247" y2="1.00781" stroke="white" stroke-width="2"/>
+                <line x1="89.0781" y1="1.00781" x2="0.411247" y2="1.00781" stroke="white" strokeWidth="2"/>
               </svg>
 
               <h3>About</h3>
@@ -68,7 +68,7 @@ export default function Home() {
           <div className='flex items-center justify-between mb-14'>
             <div className='flex gap-4 items-center'>
               <svg width="90" height="3" viewBox="0 0 90 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line x1="89.0781" y1="1.00781" x2="0.411247" y2="1.00781" stroke="white" stroke-width="2"/>
+                <line x1="89.0781" y1="1.00781" x2="0.411247" y2="1.00781" stroke="white" strokeWidth="2"/>
                 
               </svg>
 
@@ -147,7 +147,7 @@ export default function Home() {
           <div className='flex flex-col'>
             <div className='container mx-auto flex gap-4 items-center mb-14'>
               <svg width="90" height="3" viewBox="0 0 90 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line x1="89.0781" y1="1.00781" x2="0.411247" y2="1.00781" stroke="white" stroke-width="2"/>
+                <line x1="89.0781" y1="1.00781" x2="0.411247" y2="1.00781" stroke="white" strokeWidth="2"/>
               </svg>
 
               <h3>Reviews</h3>
@@ -198,7 +198,7 @@ export default function Home() {
           <div className='about-section flex flex-col mb-36'>
             <div className='flex gap-4 items-center mb-14'>
               <svg width="90" height="3" viewBox="0 0 90 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line x1="89.0781" y1="1.00781" x2="0.411247" y2="1.00781" stroke="white" stroke-width="2"/>
+                <line x1="89.0781" y1="1.00781" x2="0.411247" y2="1.00781" stroke="white" strokeWidth="2"/>
               </svg>
 
               <h3>Contact</h3>

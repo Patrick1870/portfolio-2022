@@ -32,11 +32,11 @@ export default function Header() {
                     </div>
                     <div className='flex items-center gap-4 text-white'>
                     <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2.04688 12.1484C2.04688 17.6712 6.52402 22.1484 12.0469 22.1484C17.5697 22.1484 22.0469 17.6712 22.0469 12.1484C22.0469 6.62559 17.5697 2.14844 12.0469 2.14844C6.52402 2.14844 2.04688 6.62559 2.04688 12.1484Z" stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M13.0469 2.19922C13.0469 2.19922 16.0469 6.14984 16.0469 12.1498C16.0469 18.1498 13.0469 22.1005 13.0469 22.1005" stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M11.0469 22.1005C11.0469 22.1005 8.04688 18.1498 8.04688 12.1498C8.04688 6.14984 11.0469 2.19922 11.0469 2.19922" stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M2.67969 15.6484H21.4204" stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M2.67969 8.64844H21.4204" stroke="#3D3D3D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.04688 12.1484C2.04688 17.6712 6.52402 22.1484 12.0469 22.1484C17.5697 22.1484 22.0469 17.6712 22.0469 12.1484C22.0469 6.62559 17.5697 2.14844 12.0469 2.14844C6.52402 2.14844 2.04688 6.62559 2.04688 12.1484Z" stroke="#3D3D3D" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.0469 2.19922C13.0469 2.19922 16.0469 6.14984 16.0469 12.1498C16.0469 18.1498 13.0469 22.1005 13.0469 22.1005" stroke="#3D3D3D" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11.0469 22.1005C11.0469 22.1005 8.04688 18.1498 8.04688 12.1498C8.04688 6.14984 11.0469 2.19922 11.0469 2.19922" stroke="#3D3D3D" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.67969 15.6484H21.4204" stroke="#3D3D3D" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.67969 8.64844H21.4204" stroke="#3D3D3D" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                     <div className='text-[16px]'>EN | <span className='opacity-50'>PL</span></div>
                     </div>
