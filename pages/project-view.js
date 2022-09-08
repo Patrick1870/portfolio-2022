@@ -57,7 +57,7 @@ export default function ProjectView() {
 
                 <div className="project-screens flex flex-col gap-6">
                   
-                    {imagesArr.map(img => <div className="z-10"><Image image={img} /></div> )}
+                    {imagesArr.map(img => <div key={img} className="z-10"><Image image={img} /></div> )}
 
 
                     {/*<div className="flex gap-6">
