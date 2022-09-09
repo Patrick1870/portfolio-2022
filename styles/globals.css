@@ -100,10 +100,6 @@ h5 {
     display: flex;
 }
 
-.embla__slide {
-    flex: 0 0 30%;
-}
-
 .embla__container {
     display: grid;
     gap: 50px;
@@ -197,4 +193,13 @@ h5 {
 
 .logotype:hover .logo-hover {
     display: block;
+}
+
+.embla__slide {
+    flex: 0 0 100%; 
+  }
+@media (min-width: 768px) {
+    .embla__slide {
+        flex: 0 0 30%; 
+    }
 }

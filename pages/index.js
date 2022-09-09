@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Link from 'next/link'
 import Header from './header';
 import Footer from './footer';
@@ -64,7 +63,7 @@ export default function Home() {
 
 
         <div className='container mx-auto text-left'>
-          <div className='projects-section flex flex-col mb-12 md:mb-36'>
+          <div id="projects-section" className='projects-section flex flex-col mb-12 md:mb-36'>
           <div className='flex flex-col gap-8 md:gap-0 md:flex-row md:items-center justify-between mb-14'>
             <div className='flex gap-4 items-center'>
               <svg width="90" height="3" viewBox="0 0 90 3" fill="none" xmlns="http://www.w3.org/2000/svg">

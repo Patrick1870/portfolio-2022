@@ -4,8 +4,7 @@ import { useState } from 'react';
 export default function Header() {
 
     const [isOpen, setOpen] = useState(false);
-
-   
+    const [showContact, setShowContact] = useState(false);
 
     return (
         <div className='flex justify-between items-center px-4 lg:px-8 py-4 mx-auto'>
@@ -72,8 +71,15 @@ export default function Header() {
                 </div>}
                 
                 <div className="rounded-md cta-button-border">
-                    <button className='rounded-md bg-black py-3 px-6'>Contact</button>
+                    <button onClick={() => setShowContact(!showContact)} className='rounded-md bg-black py-3 px-6'>Contact</button>
                 </div>
+
+                {showContact &&
+                
+                <div className='absolute bottom-0 left-0 w-full h-screen z-20 bg-purple-700 flex flex-col top-20 pt-24 items-center'>
+                    contact-form
+                </div>
+                }
             </nav>
       </div>
     )
