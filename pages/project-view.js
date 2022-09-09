@@ -21,11 +21,16 @@ export default function ProjectView() {
 
     const selectedProject = projects.find((e) => e.slug == router.query.project_name);
 
+    let projectName = '';
+    let desc = '';
+    let tech = '';
+    let imagesArr = '';
+
     if(selectedProject) {
-        const name = selectedProject.name;
-        const desc = selectedProject.desc;
-        const tech = selectedProject.tech;
-        const imagesArr = selectedProject.images;
+        projectName = selectedProject.name;
+        desc = selectedProject.desc;
+        tech = selectedProject.tech;
+        imagesArr = selectedProject.images;
     }
 
     return (
