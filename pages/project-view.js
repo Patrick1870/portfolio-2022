@@ -40,16 +40,16 @@ export default function ProjectView() {
 
                 <div className='project-section flex flex-col mb-12 mt-12'>
                     <div className='flex gap-4 items-center mb-12'>
-                        <h1>{ name ? name : ''}</h1>
+                        <h1>Test</h1>
                     </div>
 
                     <div className='leading-7'>
                         <p className="text-white mb-4">DESCRITPTION</p>
-                        <p className="text-white opacity-70">{desc}</p>
+                        <p className="text-white opacity-70">Test</p>
                     </div>
                     <div className='leading-7 mt-16'>
                         <p className="text-white mb-4">TECH STACK</p>
-                        <p className="text-white opacity-70">{tech}</p>
+                        <p className="text-white opacity-70">test</p>
                     </div>
                 </div>
 
