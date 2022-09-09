@@ -22,5 +22,8 @@
     "eslint-config-next": "12.2.5",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8"
+  },
+  "resolutions": {
+    "resolve": "1.20.0"
   }
 }
