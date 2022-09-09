@@ -13,7 +13,7 @@ const projects = [
             '../img/projects/screen1.jpg', '../img/projects/screen2.jpg', '../img/projects/screen3.jpg',
         ]
     }
-]
+] 
 
 
 export default function ProjectView() {

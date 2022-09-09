@@ -211,7 +211,7 @@ export default function Home() {
                 <line x1="89.0781" y1="1.00781" x2="0.411247" y2="1.00781" stroke="white" strokeWidth="2"/>
               </svg>
 
-              <h3>Contact</h3>
+              <h3>Contact</h3> 
             </div>
 
             <div className='flex flex-col-reverse md:flex-row mb-6'>
