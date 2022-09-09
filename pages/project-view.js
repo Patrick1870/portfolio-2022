@@ -40,7 +40,7 @@ export default function ProjectView() {
 
                 <div className='project-section flex flex-col mb-12 mt-12'>
                     <div className='flex gap-4 items-center mb-12'>
-                        <h1>{name}</h1>
+                        <h1>{ name ? name : ''}</h1>
                     </div>
 
                     <div className='leading-7'>
