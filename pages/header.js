@@ -1,12 +1,19 @@
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function Header() {
+
+    const [isOpen, setOpen] = useState(false);
+
+   
+
     return (
         <div className='flex justify-between items-center px-4 lg:px-8 py-4 mx-auto'>
             <div className="flex gap-8">
                 <Link href="/">
-                    <div>
-                        <img src="../img/adach-logotype.png" className='w-auto h-[30px] rotate-180'/>
+                    <div className='cursor-pointer logotype'>
+                        <img src="../img/adach-logotype-hover.png" className='logo-hover hidden w-auto h-[30px] rotate-180'/>
+                        <img src="../img/adach-logotype.png" className='logo-normal w-auto h-[30px] rotate-180'/>
                     </div>
                 </Link>
 
@@ -43,17 +50,31 @@ export default function Header() {
             </div>*/}
             </div>
 
-            <div className='menu flex gap-8 items-center'>
+            <nav className='menu flex gap-8 items-center'>
                 <div className='hidden md:flex gap-8'>
-                <a>Home</a>
-                <a>Projects</a>
-                <Link href="#reviews-section"><a>Reviews</a></Link>
+                    <Link href="/"><a>Home</a></Link>
+                    <Link href="#projects-section"><a>Projects</a></Link>
+                    <Link href="#reviews-section"><a>Reviews</a></Link>
                 </div>
+
+                <div className='cursor-pointer mobile-menu-button md:hidden' onClick={() => setOpen(!isOpen)}>
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.937476 6.56245H29.0624C29.58 6.56245 29.9999 6.14242 29.9999 5.62498C29.9999 5.10745 29.5799 4.6875 29.0624 4.6875H0.937476C0.420033 4.6875 0 5.10745 0 5.62498C0 6.1425 0.420033 6.56245 0.937476 6.56245Z" fill="white"/>
+                        <path d="M29.0624 14.0625H0.937476C0.419955 14.0625 0 14.4825 0 15C0 15.5174 0.420033 15.9375 0.937476 15.9375H29.0624C29.58 15.9375 29.9999 15.5174 29.9999 15C29.9999 14.4825 29.58 14.0625 29.0624 14.0625Z" fill="white"/>
+                        <path d="M29.0624 23.4375H0.937476C0.419955 23.4375 0 23.8575 0 24.375C0 24.8925 0.420033 25.3125 0.937476 25.3125H29.0624C29.58 25.3125 29.9999 24.8924 29.9999 24.375C30 23.8575 29.58 23.4375 29.0624 23.4375Z" fill="white"/>
+                    </svg>
+                </div>
+                {isOpen && 
+                <div className='absolute bottom-0 left-0 w-full h-screen z-20 bg-[#111] flex flex-col top-20 pt-24 items-center'>
+                    <Link href="/"><a>Home</a></Link>
+                    <Link href="#projects-section"><a>Projects</a></Link>
+                    <Link href="#reviews-section"><a>Reviews</a></Link>
+                </div>}
                 
                 <div className="rounded-md cta-button-border">
                     <button className='rounded-md bg-black py-3 px-6'>Contact</button>
                 </div>
-            </div>
+            </nav>
       </div>
     )
 }

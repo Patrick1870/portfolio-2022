@@ -45,7 +45,7 @@ export default function Home() {
 
             <div className='flex flex-col md:flex-row gap-8 mb-6'>
               <div className='rounded-md p-8 bg-[#242424] flex flex-col gap-4 items-center justify-center text-center min-w-[192px]'>
-               
+               <img src='../img/profile-photo.jpg' className='w-18 h-18'/>
                 <div className='text-[12px]'>Patryk Adach</div>
               </div> 
               <div className='rounded-md p-8 bg-[#242424] text-[#919191] leading-7'>
@@ -64,8 +64,8 @@ export default function Home() {
 
 
         <div className='container mx-auto text-left'>
-          <div className='projects-section flex flex-col mb-36'>
-          <div className='flex items-center justify-between mb-14'>
+          <div className='projects-section flex flex-col mb-12 md:mb-36'>
+          <div className='flex flex-col gap-8 md:gap-0 md:flex-row md:items-center justify-between mb-14'>
             <div className='flex gap-4 items-center'>
               <svg width="90" height="3" viewBox="0 0 90 3" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="89.0781" y1="1.00781" x2="0.411247" y2="1.00781" stroke="white" strokeWidth="2"/>
@@ -83,12 +83,12 @@ export default function Home() {
             pathname: "/project-view",
             query: {project_name: 'digitalAgencies'}, 
           }} ><a>
-          <div className='flex flex-col md:flex-row gap-8 mb-6 group'>
-            <div className='group-hover:bg-[#262BA5] rounded-md p-8 bg-[#242424] flex flex-col gap-4 items-center justify-center text-center min-w-[192px]'>
-              <img src="../img/projects/digital-agencies.jpg" />
+          <div className='flex flex-col md:flex-row md:gap-8 mb-16 md:mb-6 group'>
+            <div className='group-hover:bg-[#262BA5] rounded-tl-md rounded-tr-md md:rounded-md p-4 md:p-8 bg-[#242424] flex flex-col gap-4 items-center justify-center text-center min-w-[192px]'>
+              <img className="w-full md:w-auto" src="../img/projects/digital-agencies.jpg" />
             </div> 
-            <div className='group-hover:bg-[#262BA5] rounded-md w-full p-8 bg-[#242424] flex flex-col justify-between leading-7'>
-              <div className='flex flex-col gap-8 mb-8'>
+            <div className='group-hover:bg-[#262BA5] rounded-bl-md rounded-br-md md:rounded-md w-full p-4 pb-8 md:p-8 bg-[#242424] flex flex-col justify-between leading-7'>
+              <div className='flex flex-col gap-4 md:gap-8 mb-8'>
                 <h5>Digital Agencies</h5>
 
                 <div className='text-[#919191]'>
@@ -103,32 +103,17 @@ export default function Home() {
           </div></a>
         </Link>
 
-          <div className='flex flex-col md:flex-row gap-8 mb-6 group'>
-            <div className='group-hover:bg-[#262BA5] rounded-md p-8 bg-[#242424] flex flex-col gap-4 items-center justify-center text-center min-w-[192px]'>
-              <img src="../img/projects/digital-agencies.jpg" />
+        <Link href={{
+            pathname: "/project-view",
+            query: {project_name: 'digitalAgencies'}, 
+          }} ><a>
+          <div className='flex flex-col md:flex-row md:gap-8 mb-16 md:mb-6 group'>
+            <div className='group-hover:bg-[#262BA5] rounded-tl-md rounded-tr-md md:rounded-md p-4 md:p-8 bg-[#242424] flex flex-col gap-4 items-center justify-center text-center min-w-[192px]'>
+              <img className="w-full md:w-auto" src="../img/projects/digital-agencies.jpg" />
             </div> 
-            <div className='group-hover:bg-[#262BA5] rounded-md w-full p-8 bg-[#242424] flex flex-col justify-between leading-7'>
-              <div className='flex flex-col gap-8 mb-8'>
-                <h5>Ludlow system</h5>
-
-                <div className='text-[#919191]'>
-                Custom GatsbyJS frontend development based on client&apos;s design. Test GatsbyJS frontend development based on client&apos;s design.
-                </div>
-              </div>
-
-              <div className='flex justify-end'>
-                <div className='group-hover:text-white text-[#5C5C5C] text-[12px] uppercase leading-[15px]'>WP Plugin development: PHP, HTML, JAVASCRIPT, DESIGN</div>
-              </div>
-            </div>
-          </div>
-
-          <div className='flex flex-col md:flex-row gap-8 mb-6 group'>
-            <div className='group-hover:bg-[#262BA5] rounded-md p-8 bg-[#242424] flex flex-col gap-4 items-center justify-center text-center min-w-[192px]'>
-              <img src="../img/projects/digital-agencies.jpg" />
-            </div> 
-            <div className='group-hover:bg-[#262BA5] rounded-md w-full p-8 bg-[#242424] flex flex-col justify-between leading-7'>
-              <div className='flex flex-col gap-8 mb-8'>
-                <h5>Muscula</h5>
+            <div className='group-hover:bg-[#262BA5] rounded-bl-md rounded-br-md md:rounded-md w-full p-4 pb-8 md:p-8 bg-[#242424] flex flex-col justify-between leading-7'>
+              <div className='flex flex-col gap-4 md:gap-8 mb-8'>
+                <h5>Digital Agencies</h5>
 
                 <div className='text-[#919191]'>
                   Custom GatsbyJS frontend development <br/> based on client&apos;s design.
@@ -136,10 +121,35 @@ export default function Home() {
               </div>
 
               <div className='flex justify-end'>
-                <div className='group-hover:text-white text-[#5C5C5C] text-[12px] uppercase leading-[15px]'>GatsbyJS + TailwindCSS</div>
+                <div className='group-hover:text-white text-[#5C5C5C] text-[12px] uppercase leading-[15px]'>WP Custom development: PHP, HTML, JAVASCRIPT, DESIGN</div>
               </div>
             </div>
-          </div>
+          </div></a>
+        </Link>
+
+        <Link href={{
+            pathname: "/project-view",
+            query: {project_name: 'digitalAgencies'}, 
+          }} ><a>
+          <div className='flex flex-col md:flex-row md:gap-8 mb-16 md:mb-6 group'>
+            <div className='group-hover:bg-[#262BA5] rounded-tl-md rounded-tr-md md:rounded-md p-4 md:p-8 bg-[#242424] flex flex-col gap-4 items-center justify-center text-center min-w-[192px]'>
+              <img className="w-full md:w-auto" src="../img/projects/digital-agencies.jpg" />
+            </div> 
+            <div className='group-hover:bg-[#262BA5] rounded-bl-md rounded-br-md md:rounded-md w-full p-4 pb-8 md:p-8 bg-[#242424] flex flex-col justify-between leading-7'>
+              <div className='flex flex-col gap-4 md:gap-8 mb-8'>
+                <h5>Digital Agencies</h5>
+
+                <div className='text-[#919191]'>
+                  Custom GatsbyJS frontend development <br/> based on client&apos;s design.
+                </div>
+              </div>
+
+              <div className='flex justify-end'>
+                <div className='group-hover:text-white text-[#5C5C5C] text-[12px] uppercase leading-[15px]'>WP Custom development: PHP, HTML, JAVASCRIPT, DESIGN</div>
+              </div>
+            </div>
+          </div></a>
+        </Link>
           </div>
         </div>
 
@@ -196,7 +206,7 @@ export default function Home() {
 
         <div className='container mx-auto text-left'>
           <div className='about-section flex flex-col mb-36'>
-            <div className='flex gap-4 items-center mb-14'>
+            <div className='flex gap-4 items-center mb-10 md:mb-14'>
               <svg width="90" height="3" viewBox="0 0 90 3" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line x1="89.0781" y1="1.00781" x2="0.411247" y2="1.00781" stroke="white" strokeWidth="2"/>
               </svg>
@@ -206,18 +216,18 @@ export default function Home() {
 
             <div className='flex flex-col-reverse md:flex-row mb-6'>
            
-              <div className='rounded-tl-md rounded-bl-md p-16 bg-[#242424] leading-7 flex flex-col justify-between max-w-[560px]'>
+              <div className='md:rounded-tl-md rounded-bl-md rounded-br-md md:rounded-br-none p-4 md:p-16 bg-[#242424] leading-7 flex flex-col justify-between max-w-[560px]'>
                 <div>
                   <h3 className='text-white leading-[45px]'>Want to work together?</h3>
                   <p className='mt-4 text-white opacity-50'>Send ma an email using contact button bellow or use contact@patrykadach.com.</p>
                 </div>
 
-                <div className="rounded-md cta-button-border">
+                <div className="rounded-md cta-button-border mt-14 md:mt-0">
                     <button className='rounded-md bg-black py-3 px-6'>Send Email</button>
                 </div>
               </div>
 
-              <div className=' w-[380px] h-[380px]'>
+              <div className='w-full md:w-[380px] h-[380px]'>
                 <img src="../img/contact-image.jpg" className='rounded-tr-md rounded-br-md w-full h-full object-cover' />
               </div> 
             </div>

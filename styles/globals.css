@@ -29,17 +29,17 @@ a {
 }
 
 h1 {
-    @apply text-[48px];
+    @apply text-[39px] md:text-[48px];
     letter-spacing: 2.5px;
 }
 
 h3 {
-    font-size: 31.25px;
+    @apply text-[25px] md:text-[31.25px];
     letter-spacing: 2.5px;
 }
 
 h5 {
-    font-size: 20px;
+    @apply text-[16px] md:text-[20px];
     letter-spacing: 2.5px;
 }
 
@@ -55,7 +55,7 @@ h5 {
 
 
 .cta-button-border {
-    max-width: 148px;
+    max-width: 149px;
     padding: 5px;
     position: relative;
     background: linear-gradient(to right, #272ED9, #A31D95);
@@ -189,4 +189,12 @@ h5 {
 
 .container {
     @apply px-4;
+}
+
+.logotype:hover .logo-normal {
+    display: none;
+}
+
+.logotype:hover .logo-hover {
+    display: block;
 }
